@@ -7,12 +7,37 @@
     <title>Document</title>
   </head>
   <style>
-    body {height:98vh;border: 1px dashed black;
-      background-image: url(https://gustavoguanabara.github.io/html-css/imagens/mascote.png);
+    body {
+      height: 98vh;
+      border: 1px dashed black;
+
       background-size: 100px;
       background-repeat: no-repeat;
-      background-position: center right;
+    }
+    div.conteudo {
+      background-image: url("https://gustavoguanabara.github.io/html-css/imagens/mascote.png");
+      background-size: 100% 100%;
+
+      position: absolute;
+      width: 400px;
+      left: 50%;
+      border-radius: 50px;
+      top: 50%;
+      height: 500px;
+      width: 500px;
+      background-color: rgba(255, 255, 0, 0.097);
+      transform: translate(-50%, -50%);
+    }
+
+    h1 {
+      font-style: normal;
+      font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+      font-size: 3.9rem;text-align: center;
     }
   </style>
-  <body></body>
+  <body>
+    <h1>Olá mundo!</h1>
+    <div class="conteudo"></div>
+  </body>
 </html>
