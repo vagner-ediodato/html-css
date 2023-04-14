@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabelas</title>
+    <style>
+      body {
+        font-family: arial;
+      }
+      table {
+        width: 400px;
+        border-collapse: collapse;
+      }
+      caption {
+        font-size: 1.3em;
+        font-weight: bold;
+        padding: 10px;
+      }
+      th,
+      td {
+        border: 1px solid gray;
+        padding: 10px;
+      }
+      
+      col.cnome {
+        background-color: rgb(217, 209, 209);
+        
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Exercício de tabelas</h1>
+    <table>
+      <colgroup>
+        <col class="cnome" />
+        <col class="csexo" />
+        <col class="cidade" />
+        <col class="cprof" />
+      </colgroup>
+      <caption>
+        Cadastro
+      </caption>
+      <tr>
+        <th scope="col">Nome</th>
+        <th scope="col">Sexo</th>
+        <th scope="col">Idade</th>
+        <th scope="col">Profissão</th>
+      </tr>
+      <tr>
+        <td>Lorenna</td>
+        <td>F</td>
+        <td>16</td>
+        <td>Estudante</td>
+      </tr>
+      <tr>
+        <td>Geovaneo</td>
+        <td>M</td>
+        <td>38</td>
+        <td>Vigilante</td>
+      </tr>
+      <tr>
+        <td>Fernanda</td>
+        <td>F</td>
+        <td>33</td>
+        <td>Bancária</td>
+      </tr>
+      <tr>
+        <td>Vagner</td>
+        <td>M</td>
+        <td>35</td>
+        <td>Programador</td>
+      </tr>
+      <tr>
+        <td>Sabrina</td>
+        <td>F</td>
+        <td>33</td>
+        <td>Jornalista</td>
+      </tr>
+      <tr>
+        <td>Geraldo</td>
+        <td>M</td>
+        <td>69</td>
+        <td>Aposentado</td>
+      </tr>
+    </table>
+  </body>
+</html>
