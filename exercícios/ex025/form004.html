@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário</title>
+    <style>
+      body {
+        margin: auto;
+
+        padding: 20px;
+        font-family:Tahoma, sans-serif;
+      }
+      fieldset {
+        padding: 20px;
+        border-radius: 20px ;
+       
+        
+        color: black;
+        width: 50%;
+      }
+      
+      label { 
+      font-weight: bolder;
+      }
+      input {
+        border-radius: 6px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Exemplo de formulário</h1>
+
+    <fieldset>
+      <legend>Dados Pessoais</legend>
+      <form action="cadastro.php" method="get">
+        <p>
+          <label for="inome">Nome :</label>
+          <input
+            type="text"
+            name="nome"
+            id="inome"
+            placeholder="Nome completo"
+            required
+          />
+        </p>
+        <p>
+          <label for="iprof">Profissão :</label>
+          <input
+            type="text"
+            name="profissao"
+            id="iprof"
+            placeholder="Campo obrigatório"
+            required
+          />
+        </p>
+        <p>
+          <label for="isexo">Sexo :</label>
+          <input type="checkbox" name="sexom" id="isexom" required /> M
+          <input type="checkbox" name="sexo" id="isexof" required /> F
+          <input type="checkbox" name="sexo" id="isexof" required /> Prefiro não
+          responder
+        </p>
+        <p>
+          <label for="ietnia"> Cor :</label>
+          <input
+            type="text"
+            name="etnia"
+            id="ietnia"
+            placeholder="campo obrigatório"
+            required
+          />
+        </p>
+        <p>
+          <label for="iemail"> Email :</label>
+          <input
+            type="email"
+            name="email"
+            id="iemail"
+            autocomplete="email"
+            placeholder="Campo obrigatório"
+            required
+          />
+        </p>
+        <p>
+          <label for="itel"> Telefone :</label>
+          <input
+            type="tel"
+            name="tel"
+            id="itel"
+            autocomplete="tel"
+            placeholder="(xx)xxxxx-xxxx"
+            pattern="\(\d{2}\)\d{4,5}-\d{4}$"
+            required
+          />
+        </p>
+        <!--ESTUDAR SOBRE RegEx-->
+        <p>
+          <input type="submit" value="Enviar" />
+          <input type="submit" value="Limpar" />
+        </p>
+      </form>
+    </fieldset>
+  </body>
+</html>
