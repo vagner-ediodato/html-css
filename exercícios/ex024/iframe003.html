@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Uso de iframes</title>
+    <style>
+      body {
+        margin: auto;
+        padding: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      iframe#tela {
+        background-color: lightgray;
+        width: 95vh;
+        height: 400px;
+        border: 2px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Faça uma escolha</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque laborum
+      consequatur nesciunt iusto, atque eveniet, porro at quae voluptates earum
+      placeat illo aperiam inventore sint, quos exercitationem? Accusamus, dicta
+      quod.
+    </p>
+    <ul>
+      <li>
+        <a href="./pasta-extras/pag001.html" target="frame">primeira página </a>
+      </li>
+      <li>
+        <a href="./pasta-extras/pag002.html" target="frame">segunda página</a>
+      </li>
+      <li>
+        <a href="./pasta-extras/pag003.html" target="frame">terceira página</a>
+      </li>
+    </ul>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis
+      inventore tenetur provident quidem reprehenderit doloremque necessitatibus
+      asperiores neque facilis cumque pariatur odio labore consequatur sed
+      debitis voluptates quas, repudiandae recusandae.
+    </p>
+    <iframe
+      id="tela"
+      name="frame"
+      srcdoc="<h1>Escolha uma das opções acima</h1><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis
+      inventore tenetur provident quidem reprehenderit doloremque necessitatibus
+      asperiores neque facilis cumque pariatur odio labore consequatur sed
+      debitis voluptates quas, repudiandae recusandae.</p>"
+    ></iframe>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit doloremque
+      iusto magni nemo repudiandae, ducimus tempora culpa commodi architecto
+      ipsa quia unde libero ex ratione harum obcaecati, corporis maiores
+      dolores!
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, laborum
+      corporis. Dignissimos, illum esse. Veniam corrupti accusamus, tempora
+      obcaecati culpa odit, vero vel architecto, velit tempore consequuntur
+      ipsum aliquam at!
+    </p>
+  </body>
+</html>
