@@ -1,2 +1,20 @@
 /*
 conf. gerais*/
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body,
+html {
+  width: 100vh;
+  height: 100vh;
+  background-color: #233eff;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+h1 {
+  color: white;
+  text-shadow: 3px 3px 0px #1526a7;
+}
