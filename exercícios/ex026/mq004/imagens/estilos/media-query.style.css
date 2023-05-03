@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+@media print {
+  * {
+    font-family: "Courier New", Courier, monospace;
+  }
+
+  body {
+    /* background-image: url(../back-print.jpg);*/
+  }
+  main {
+    width: 90vw;
+    border: 2px solid rgb(0, 0, 0);
+  }
+  main::after {
+    content: 'Olá mundo'; text-decoration: overline;
+  }
+  main h1 {
+    text-shadow: none;
+    color: rgb(0, 0, 0);
+  }
+  img#phone {
+    display: none;
+  }
+  img#tablet {
+    display: none;
+  }
+  img#print {
+    display: block;
+  }
+  img#pc {
+    display: none;
+  }
+  img#tv {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  body {
+    background-image: url(../back-tablet.jpg);
+  }
+
+  img#phone {
+    display: none;
+  }
+  img#tablet {
+    display: block;
+  }
+  img#print {
+    display: none;
+  }
+  img#pc {
+    display: none;
+  }
+  img#tv {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  body {
+    background-image: url(../back-pc.jpg);
+  }
+  img#phone {
+    display: none;
+  }
+  img#tablet {
+    display: none;
+  }
+  img#print {
+    display: none;
+  }
+  img#pc {
+    display: block;
+  }
+  img#tv {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  body {
+    background-image: url(../back-tv.jpg);
+  }
+  img#phone {
+    display: none;
+  }
+  img#tablet {
+    display: none;
+  }
+  img#print {
+    display: none;
+  }
+  img#pc {
+    display: none;
+  }
+  img#tv {
+    display: block;
+  }
+}
