@@ -13,7 +13,8 @@
     border: 2px solid rgb(0, 0, 0);
   }
   main::after {
-    content: 'Olá mundo'; text-decoration: overline;
+    content: "Olá mundo";
+    text-decoration: overline;
   }
   main h1 {
     text-shadow: none;
