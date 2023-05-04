@@ -18,9 +18,20 @@ header h1 {
   padding: 10px;
   text-align: center;
 }
+i#burguer {
+  background-color: rgb(80, 77, 77);
+  text-align: center;
+  display: block;
+  padding: 10px;
+  color: white;
+  cursor: pointer;
+}
+i#burguer:hover {
+  background-color: black;
+}
 
 menu {
-  display: block;
+  display: none;
 }
 menu ul {
   list-style-type: none;
@@ -38,7 +49,7 @@ menu ul li a {
 menu ul li a:hover {
   background-color: rgb(171, 161, 161);
 }
-main {
+main { 
   background-color: white;
   width: 90vw;
   margin: auto;
